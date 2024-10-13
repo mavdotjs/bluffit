@@ -1,0 +1,21 @@
+on:
+    release:
+        types: [created]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: denoland/setup-deno@v2
+              with:
+                deno-version: v2.x
+            - name: "Build app"
+              run: |
+                deno run build
+            - name: "Zip container"
+              run: |
+                zip -r container.zip ./container
+            - name: "Upload to release"
+              uses: svenstaro/upload-release-action@2.9.0
+              with:
+                file: "./container.zip"

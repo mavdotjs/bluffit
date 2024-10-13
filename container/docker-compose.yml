@@ -1,0 +1,9 @@
+version: '3'
+name: "bluffit"
+
+services:
+  app:
+    container_name: "app"
+    build: .
+    volumes:
+      - ./run/:/var/run/proxy/

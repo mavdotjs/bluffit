@@ -1,5 +1,5 @@
 {
-	"name": "finallydoingthisfunkyahhcardgame",
+	"name": "bluffit",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -23,6 +23,7 @@
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
 		"svelte": "^5.0.0-next.1",
+		"svelte-adapter-deno": "^0.9.1",
 		"svelte-check": "^4.0.0",
 		"typescript": "^5.0.0",
 		"typescript-eslint": "^8.0.0",
