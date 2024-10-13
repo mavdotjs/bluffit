@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker-compose down
+docker compose down
 rm -rf ./run
 docker image remove bluffit-app
-docker-compose up
+docker compose up
